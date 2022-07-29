@@ -1,5 +1,10 @@
 // import fetch from "node-fetch";
 
+// https://scrappy-php.herokuapp.com/?url=
+// https://api.allorigins.win/raw?url=
+// https://cors.eu.org/
+// https://cors-proxy.tk/?url=
+
 export default async function (link: string, limit?: number) {
   let limitnya = "";
   if (limit) {
@@ -7,10 +12,7 @@ export default async function (link: string, limit?: number) {
   }
 
   let data: any = await fetch(
-    `${link}/feeds/posts/default?alt=json${limitnya}`,
-    {
-      mode: "no-cors",
-    }
+    `https://cors.eu.org/${link}/feeds/posts/default?alt=json${limitnya}`
   );
   data = await data.json();
 
