@@ -7,7 +7,10 @@ export default async function (link: string, limit?: number) {
   }
 
   let data: any = await fetch(
-    `${link}/feeds/posts/default?alt=json${limitnya}`
+    `${link}/feeds/posts/default?alt=json${limitnya}`,
+    {
+      mode: "no-cors",
+    }
   );
   data = await data.json();
 

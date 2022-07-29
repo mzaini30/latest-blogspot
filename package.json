@@ -1,6 +1,6 @@
 {
   "name": "latest-blogspot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mendapatkan list artikel terbaru dari Blogspot",
   "main": "dist/index.js",
   "scripts": {
