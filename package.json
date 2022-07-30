@@ -1,10 +1,11 @@
 {
   "name": "latest-blogspot",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Mendapatkan list artikel terbaru dari Blogspot",
   "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "scripts": {
-    "build": "tsup src/index.ts --dts",
+    "build": "tsup src/index.ts --format esm --dts",
     "prepublishOnly": "npm run build"
   },
   "files": [
